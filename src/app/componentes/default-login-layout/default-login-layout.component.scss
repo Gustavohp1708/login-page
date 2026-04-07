@@ -25,9 +25,11 @@ main {
     .form-section {
         flex-grow: 0.5;
         padding: 0 35px;
+        
 
         img {
             margin-bottom: 30px;
+            min-width: 300px;
         }
     }
 
@@ -78,7 +80,7 @@ main {
             &.btn-primary {
                 background-color: $primary-color;
                 color: #fff;
-                box-shadow: 0px 12px 50px rgba(89, 0, 255, 0.582);
+                box-shadow: 0px 12px 50px rgba(129, 74, 233, 0.582);
             }
 
             &.btn-secondary {
