@@ -33,10 +33,11 @@ main {
         }
     }
 
-    h2 {
+    h4 {
         font-size: 20px;
-        font-weight: bold;
+        font-weight: 400;
         margin-bottom: 45px;
+        color: $text-color;
     }
 
     .btn-wrapper {
@@ -76,6 +77,11 @@ main {
             background: transparent;
             padding: 12px 24px;
             cursor: pointer;
+
+            &:disabled {
+                opacity: 0.8;
+                cursor: not-allowed;
+            }
 
             &.btn-primary {
                 background-color: $primary-color;

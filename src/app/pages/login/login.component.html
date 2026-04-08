@@ -1,14 +1,19 @@
 <app-default-login-layout 
     title="Entre e comece agora"
     primaryBtnText="Entrar" 
-    secondaryBtnText="Registrar-se">    
+    secondaryBtnText="Registrar-se"   
+    (submit)="submit()"
+    (navigate)="navigate()"
+    [disablePrimaryBtn]="!loginForm.valid"
+    
+    >
 
     <form [formGroup]="loginForm">
         <app-primary-input
             formControlName="email"
             inputName="email"
             type="email"
-            label="Email"
+            label="E-mail"
             placeholder="email@exemplo.com"
         >
             <img src="assets/svg/email-icon.svg"/>
