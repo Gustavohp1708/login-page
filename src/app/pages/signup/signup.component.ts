@@ -41,9 +41,9 @@ export class SignupComponent {
   }
 
   submit(){
-    this.loginService.login(this.signupForm.value.email, this.signupForm.value.password).subscribe({
-      next: () => this.toastService.success("Login feito com sucesso"),
-      error: () => this.toastService.error("Credenciais inválidas ou você não possui um cadastro")
+    this.loginService.signup(this.signupForm.value.name, this.signupForm.value.email, this.signupForm.value.password).subscribe({
+      next: () => this.toastService.success("Cadastro realizado com sucesso!"),
+      error: () => this.toastService.error("Não foi possível concluir o cadastro. Verifique os dados e tente novamente.")
     });
   }
 
